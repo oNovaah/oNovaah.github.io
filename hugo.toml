@@ -55,13 +55,14 @@ title = 'Aaron Wasserman'
   # activityDelay = 5 : deprecated
 
   description = """
-  Hi, I'm Aaron Wasserman! I'm a Senior Offensive
-  Security Engineer at Praetorian helping leading
-  organizations solve complex security problems.
-  I'm a member of the IoT team where I focus on
-  IoT/hardware and web application security
-  assessments. All opinions expressed are my own,
-  not my employer's.
+  Hi, I'm Aaron Wasserman! I'm a Senior 
+  Offensive Security Engineer at Praetorian 
+  helping leading organizations solve complex 
+  security problems. I'm a member of the IoT 
+  team where I focus on IoT/hardware and web 
+  application security assessments. All 
+  opinions expressed are my own, not my 
+  employer's.
 
   I graduated from Georgia Tech with a B.S.
   in Computer Engineering in 2021 and an M.S.
@@ -73,7 +74,7 @@ title = 'Aaron Wasserman'
   cyber-physical systems security.
 
   In my free time, I am also an amateur
-  astrophotgrapher (see my Astrobin page!)
+  astrophotographer (see my Astrobin page!)
 
   Feel free to connect with me on the platforms
   linked below!
