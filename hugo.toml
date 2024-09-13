@@ -1,0 +1,95 @@
+baseURL = 'https://aaronwasserman.com/'
+languageCode = 'en-us'
+title = 'Aaron Wasserman'
+
+[module]
+[[module.imports]]
+    path = 'github.com/yukuro/hugo-theme-shell'
+
+[Params]
+  # Note: This is for the meta description, which is different from the "description" displayed in the terminal.
+  description = "Aaron Wasserman's Landing Page"
+  [Params.Terminal]
+  # Note: color scheme
+  # Note: You can choose between
+  # Note: hugo-theme-shell original: ["shell-powershell", "shell-ubuntu", "shell-retro"]
+  # Note: or
+  # Note: gogh theme: https://mayccoll.github.io/Gogh/
+  scheme = "shell-ubuntu"
+
+  # Note: in terminal
+  # [userName]@[pcName]:~/$ cd [workDir]
+  # [userName]@[pcName]:~/[workDir]$ cat [profile]
+  #
+  # [description]
+  #
+  # Note: if you set Params.Tree > use = true
+  # [userName]@[pcName]:~/[workDir]$ tree ./[folderName]/
+  # ./[folderName]/
+  # ...
+  # Note: result of the tree command
+  userName = "aaron"
+  pcName = "wasserman"
+  workDir = "novaah"
+  profile = "profile.txt"
+
+  # Note: speed at which text is displayed on the terminal
+  # Note: if set to 0, typing animation will be disabled
+  # Note:
+  # Note: if you want to enable Mathjax, you need to set it to 0
+  # Note: and set "math: true" at front matter in your Markdown file
+  ps1Delay = 0 # prompt speed : [userName]@[pcName]:~/$ , [userName]@[pcName]:~/[workDir]$
+  stdoutDelay = 0 # stdout speed : [description] , files in Params.Tree
+  commandDelay = 50 # command speed : cd [workDir] , cat [profile] , tree ./[folderName]/
+
+  # terminalDelay = 20 : deprecated
+
+  # Note: speed at which text is displayed on the activity pages
+  # Note: if set to 0, typing animation will be disabled
+  # Note: 
+  # Note: if you want to enable Mathjax, you need to set it to 0
+  # Note: and set "math: true" at front matter in your Markdown file
+  titleDelay = 0 # title speed : "title" in front matter
+  contentDelay = 0 # content speed : content in .md file
+
+  # activityDelay = 5 : deprecated
+
+  description = """
+  Hi, I'm Aaron Wasserman! I'm a Senior Offensive
+  Security Engineer at Praetorian helping leading
+  organizations solve complex security problems.
+  I'm a member of the IoT team where I focus on
+  IoT/hardware and web application security
+  assessments. All opinions expressed are my own,
+  not my employer's.
+
+  I graduated from Georgia Tech with a B.S.
+  in Computer Engineering in 2021 and an M.S.
+  in Electrical and Computer Engineering in
+  2022. In my time at Georgia Tech, I thoroughly
+  enjoyed my coursework in malware reverse
+  engineering and analysis, cryptographic
+  hardware for embedded systems, and
+  cyber-physical systems security.
+
+  In my free time, I am also an amateur
+  astrophotgrapher (see my Astrobin page!)
+
+  Feel free to connect with me on the platforms
+  linked below!
+  
+  """
+
+  # Note: If you want to use a Markdown file, you can use the following
+  # description = "/description.md"
+  # Note: and put the description.md in /content/description.md
+
+  [Params.Tree]
+  use = true
+  folderName = "links"
+  # Note: ["ACTIVITY", "URL or PATH TO YOUR MARKDOWN FILE"]
+  files = [ 
+    ["LinkedIn", "https://www.linkedin.com/in/aaron-wasserman/"],
+    ["Twitter", "https://x.com/novaah_sec"],
+    ["Astrobin", "https://www.astrobin.com/users/aaron.wasserman/#"],
+  ]
